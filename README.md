@@ -7,6 +7,7 @@ There is clearly room for improvement. But I thought it might be useful for othe
 I am using `albacore` (https://community.nanoporetech.com/downloads) for basecalling from the fast5 files, and I am usually putting all my reads in one single fastq file.
 
 If all your reads are not in one single fastq file, you can concatenate all of them (assuming they are all in the same folder) with:
+
 `cat *.fastq > pool.fastq`
 
 # In command line
