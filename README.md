@@ -1,4 +1,4 @@
-# nanoporereads_LengthvsTime
+# Nanopore reads: Length vs Time
 
 I am working on a sequencing project using the Oxford Nanopore MinION sequencing device and wanted to explore potential bias of read lengths over time in my data (for example: are short fragments sequenced first?). I thus wrote this short command line/R script to create a read length vs time since start scatterplot. For instance, it helped me to decide how long I should run my sequencing runs to get longer reads.
 
