@@ -21,4 +21,5 @@ If all your reads are not in one single fastq file, you can concatenate all of t
  R script attached.
  
  (1) From http://onetipperday.sterding.com/2012/05/simple-way-to-get-reads-length.html
+ 
  (2) From https://stackoverflow.com/questions/8101701/grep-characters-before-and-after-match
