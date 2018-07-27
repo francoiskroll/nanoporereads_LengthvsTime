@@ -35,25 +35,27 @@ lm_timelgth <- lm (length_kb ~ time_hr, timelgth)
 intercept <- lm_timelgth$coefficients [1]
 coefficient <- lm_timelgth$coefficients [2]
 
+# scatterplot
 plot (x = timelgth$time, y = timelgth$length, 
       pch = 20, bty = 'l',
       xlab = 'time (seconds)', ylab = 'length (bp)')
-
 abline (intercept, coefficient)
 
+# OR with ggplot
+                
 ggplot (timelgth, aes(x = time_hr, y = length_kb)) + 
   geom_point (alpha = 0.2, shape = 20) +
   geom_abline (intercept = intercept, slope = coefficient, color = '#9E0000', size = 1.5) +
   xlab ('Time (hours)') +
   ylab ('Length (kb)')
 
-# hexagons heatmap
+# OR: hexagons heatmap
 # ggplot (timelgth, aes(x = time_hr, y = length_kb)) + 
 #   stat_binhex () +
 #   xlab ('Time (hours)') +
 #   ylab ('Length (kb)')
 # 
-# rectangles heatmap
+# OR: rectangles heatmap
 # ggplot (timelgth, aes(x = time_hr, y = length_kb)) +
 #   geom_bin2d () +
 #   xlab ('Time (hours)') +
