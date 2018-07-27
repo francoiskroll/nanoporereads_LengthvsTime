@@ -1,7 +1,7 @@
 library (ggplot2)
 library (hexbin)
 
-setwd("~/Documents/nanopore_runs/3_7_TD65_primers56/workspace")
+setwd("where_your_files_are")
 lgths <- read.csv ('lengths.txt')
 dates_times <- read.csv ('times.txt')
 
