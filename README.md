@@ -18,4 +18,4 @@ If all your reads are not in one single fastq file, you can concatenate all of t
 `grep -E -o "start_time.{0,20}" pool.fastq | cut -c 12- > times.txt` (2)
 
 # In R
- > Get the R script attached.
+ -> Get the R script attached.
