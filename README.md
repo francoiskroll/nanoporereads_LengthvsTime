@@ -12,10 +12,13 @@ If all your reads are not in one single fastq file, you can concatenate all of t
 
 # In command line
 ## Create list of read lengths
-`cat pool.fastq | awk '{if(NR%4==2) print length($1)}' > lengths.txt` (1)
+`cat pool.fastq | awk '{if(NR%4==2) print length($1)}' > lengths.txt`<sup> 1</sup>
 
 ## Create list of sequencing dates/times
-`grep -E -o "start_time.{0,20}" pool.fastq | cut -c 12- > times.txt` (2)
+`grep -E -o "start_time.{0,20}" pool.fastq | cut -c 12- > times.txt` <sup> 2</sup>
 
 # In R
  R script attached.
+ 
+ (1) From http://onetipperday.sterding.com/2012/05/simple-way-to-get-reads-length.html
+ (2) From https://stackoverflow.com/questions/8101701/grep-characters-before-and-after-match
