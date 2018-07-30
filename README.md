@@ -2,7 +2,7 @@
 
 I am working on a sequencing project using the Oxford Nanopore MinION sequencing device and wanted to explore potential bias of read lengths over time in my data (for example: are short fragments sequenced first?). I thus wrote this short command line/R script to create a read length vs time since start scatterplot. For instance, it helped me decide how long I should run my flowcell to get enough long reads.
 
-There is clearly room for improvement. But I thought it might be useful for other users of the Nanopore! Feel free to use/modify it.
+There is probably room for improvement. But I thought it might be useful for other users of the Nanopore! Feel free to use/modify it.
 
 I am using `albacore` (https://community.nanoporetech.com/downloads) for basecalling from the fast5 files, and I am usually putting all my reads in one single fastq file.
 
